@@ -15,7 +15,7 @@ title = "Blowfish"
 
  [author]
    name = "真有高的"
-   image = "img/blowfish_logo.png"
+#  image = "img/blowfish_logo.png"
    headline = "I'm only human"
    bio = "A little bit about you"
 #   links = [
