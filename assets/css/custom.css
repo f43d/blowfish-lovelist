@@ -6,10 +6,23 @@
     --bucket-list-item-color: #065A60; /* Example color, adjust as needed */
 }
 
+@font-face {
+    font-family: 'NaikaiFont-Regular';
+    src: url('/fonts/NaikaiFont-Regular.woff2') format('woff2'),
+         url('/fonts/NaikaiFont-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Custom styles for bucket list items */
+
 .bucket-list-item {
-    font-family: var(--bucket-list-font-family);
-    font-size: var(--bucket-list-font-size);
-    color: var(--bucket-list-item-color);
+    font-family: 'NaikaiFont-Regular', sans-serif; /* Ensure your custom web font is applied */
+    color: #333; /* Default color, change as necessary */
+/*  font-family: var(--bucket-list-font-family); */
+/*  font-size: var(--bucket-list-font-size); */
+/*  color: var(--bucket-list-item-color); */
+    font-size: 22px;
     margin-top: 10px;
     line-height: 1.6;
     display: flex;
@@ -21,12 +34,14 @@
 }
 
 .bucket-list-item span {
+    font-family: 'NaikaiFont-Regular', sans-serif; /* Ensure your custom web font is applied */
     display: inline-block;
     font-size: 22px; /* Adjust font size as needed */
     color: #333333; /* Adjust font color as needed */
 }
 
 .bucket-list-item a {
+    font-family: 'NaikaiFont-Regular', sans-serif;
     color: #1a0dab; /* Change color of the links */
     font-size: 18px; /* Adjust font size as needed */
     text-decoration: none; /* Optional: removes underline from links */ 
