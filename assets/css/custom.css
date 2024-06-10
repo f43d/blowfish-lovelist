@@ -36,6 +36,6 @@
 
 @media (max-width: 768px) {
     .bucket-list-item {
-        font-size: 14px; /* Smaller font size on smaller screens */
+        font-size: 24px; /* Smaller font size on smaller screens */
     }
 }
