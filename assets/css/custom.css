@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+:root {
+    --bucket-list-font-family: 'Noto Sans TC', sans-serif;
+    --bucket-list-font-size: 16px; /* or any appropriate size */
+    --bucket-list-item-color: #065A60; /* Example color, adjust as needed */
+}
+
+.bucket-list-item {
+    font-family: var(--bucket-list-font-family);
+    font-size: var(--bucket-list-font-size);
+    color: var(--bucket-list-item-color);
+    margin-top: 10px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+
+.bucket-list-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.bucket-list-item span {
+    display: inline-block;
+}
+
+.bucket-list-item a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.bucket-list-item .checked {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .bucket-list-item {
+        font-size: 14px; /* Smaller font size on smaller screens */
+    }
+}
