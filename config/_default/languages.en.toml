@@ -1,7 +1,7 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Blowfish"
+title = "十日痰"
 
 [params]
   displayName = "EN"
@@ -15,9 +15,9 @@ title = "Blowfish"
 
  [author]
    name = "真有高的"
-#  image = "img/blowfish_logo.png"
-   headline = "I'm only human"
-   bio = "A little bit about you"
+   image = "img/blowfish_logo.png"
+   headline = "十日痰"
+   bio = "中年大叔的無病呻吟"
 #   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
