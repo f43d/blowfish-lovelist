@@ -12,10 +12,13 @@
     align-items: center;
     font-size: 45px; /* Default font size */
     margin-bottom: 10px;
-    <div class="bucket-list-item {{ if eq (.Get "checked") "true" }}checked{{ end }}">
-    </div>
+    padding: 0;    
+}
 
-
+/* Reset specific or inherited styles */
+.bucket-list-container * {
+    margin: 0;
+    padding: 0;
 }
 
 .bucket-list-item .checkbox-icon {
@@ -55,10 +58,10 @@
 .bucket-list-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
-    margin: 0 auto;
+    width: fit-content;
+    margin: auto;
     font-family: 'lst', Arial, sans-serif; // Primary font setup here
     text-align: center; // Ensuring text within the container is centered
 }

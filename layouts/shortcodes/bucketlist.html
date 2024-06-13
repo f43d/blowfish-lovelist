@@ -10,3 +10,6 @@
         {{ .Get "number" }}. <a href="{{ .Get "link" }}">{{ .Get "content" }}</a>
     </span>
 </div>
+<div class="bucket-list-item {{ if eq (.Get "checked") "true" }}checked{{ end }}">
+    <span>...</span>
+</div>
