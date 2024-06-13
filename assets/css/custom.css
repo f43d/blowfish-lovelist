@@ -9,13 +9,13 @@
 
 .bucket-list-item {
     display: flex;
-    align-items: center;
-    font-size: 16px; /* Default font size */
-    margin-bottom: 15px;
+    align-items: left;
+    font-size: 40px; /* Default font size */
+    margin-bottom: 40px;
 }
 
 .bucket-list-item .checkbox-icon {
-    width: 24px; /* Default width for checkbox icon */
+    width: 35px; /* Default width for checkbox icon */
     height: auto;
     margin-right: 10px;
 }
@@ -24,10 +24,11 @@
 @media (max-width: 768px) {
     .bucket-list-item {
         font-size: 14px; /* Smaller font size for mobile */
+        align-items: left;
     }
 
     .bucket-list-item .checkbox-icon {
-        width: 20px; /* Smaller checkbox icon for mobile */
+        width: 14px; /* Smaller checkbox icon for mobile */
     }
 }
 
