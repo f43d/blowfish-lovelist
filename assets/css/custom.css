@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
-
-:root {
-    --bucket-list-font-family: 'Noto Sans TC', sans-serif;
-    --bucket-list-font-size: 16px; /* or any appropriate size */
-    --bucket-list-item-color: #065A60; /* Example color, adjust as needed */
-}
 
 @font-face {
     font-family: 'lst';
@@ -14,51 +7,52 @@
     font-style: normal;
 }
 
-/* Custom styles for bucket list items */
-
 .bucket-list-item {
-    font-family: 'lst', sans-serif; /* Ensure your custom web font is applied */
-    color: #333; /* Default color, change as necessary */
-/*  font-family: var(--bucket-list-font-family); */
-/*  font-size: var(--bucket-list-font-size); */
-/*  color: var(--bucket-list-item-color); */
-    font-size: 22px;
-    margin-top: 10px;
-    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Default font size */
+    margin-bottom: 15px;
+}
+
+.bucket-list-item .checkbox-icon {
+    width: 24px; /* Default width for checkbox icon */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Responsive Text Sizing */
+@media (max-width: 768px) {
+    .bucket-list-item {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .bucket-list-item .checkbox-icon {
+        width: 20px; /* Smaller checkbox icon for mobile */
+    }
+}
+
+.bucket-list-item a {
+    color: #0056b3; /* Customize as needed */
+    text-decoration: none; /* Removing underline */
+}
+
+.bucket-list-item span {
     display: flex;
     align-items: center;
 }
 
-.bucket-list-item input[type="checkbox"] {
-    margin-right: 10px;
+.bucket-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'lst', Arial, sans-serif; // Primary font setup here
+    text-align: center; // Ensuring text within the container is centered
 }
 
-.bucket-list-item span {
-    font-family: 'lst', sans-serif; /* Ensure your custom web font is applied */
-    display: inline-block;
-    font-size: 55px; /* Adjust font size as needed */
-    color: #blue; /* Adjust font color as needed */
-}
 
-.bucket-list-item a {
-    font-family: 'lst', sans-serif;
-    color: #1a0dab; /* Change color of the links */
-    font-size: 55px; /* Adjust font size as needed */
-    text-decoration: none; /* Optional: removes underline from links */
-}
 
-.bucket-list-item .checked {
-    text-decoration: line-through;
-    opacity: 0.6;
-    color: #777777; /* Color for text that is crossed out */
-}
-
-@media (max-width: 768px) {
-    .bucket-list-item {
-        font-size: 14px; /* Smaller font size on smaller screens */
-    }
-
-}
 .custom-footer-pretext {
     text-align: center;
     color: #666;  /* Default color, change as needed */

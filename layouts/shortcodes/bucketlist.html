@@ -1,6 +1,12 @@
 <div class="bucket-list-item">
-    <input type="checkbox" {{ if .Get "checked" }}checked{{ end }} disabled>
-    <span class="{{ if .Get "checked" }}checked{{ end }}">
+    {{ if eq (.Get "checked") "true" }}
+    <!-- SVG for checked checkbox -->
+    <img src="/images/checked-box.svg" alt="Checked" class="checkbox-icon">
+    {{ else }}
+    <!-- SVG for unchecked checkbox -->
+    <img src="/images/unchecked-box.svg" alt="Unchecked" class="checkbox-icon">
+    {{ end }}
+    <span>
         {{ .Get "number" }}. <a href="{{ .Get "link" }}">{{ .Get "content" }}</a>
     </span>
 </div>

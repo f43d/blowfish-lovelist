@@ -1,0 +1,6 @@
+<div class="bucket-list-item-old">
+    <input type="checkbox" {{ if .Get "checked" }}checked{{ end }} disabled>
+    <span class="{{ if .Get "checked" }}checked{{ end }}">
+        {{ .Get "number" }}. <a href="{{ .Get "link" }}">{{ .Get "content" }}</a>
+    </span>
+</div>
