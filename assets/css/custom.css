@@ -10,25 +10,25 @@
 .bucket-list-item {
     display: flex;
     align-items: left;
-    font-size: 40px; /* Default font size */
+    font-size: 45px; /* Default font size */
     margin-bottom: 10px;
 }
 
 .bucket-list-item .checkbox-icon {
-    width: 35px; /* Default width for checkbox icon */
+    width: 45px; /* Default width for checkbox icon */
     height: auto;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 /* Responsive Text Sizing */
 @media (max-width: 768px) {
     .bucket-list-item {
-        font-size: 14px; /* Smaller font size for mobile */
+        font-size: 20px; /* Smaller font size for mobile */
         align-items: left;
     }
 
     .bucket-list-item .checkbox-icon {
-        width: 14px; /* Smaller checkbox icon for mobile */
+        width: 20px; /* Smaller checkbox icon for mobile */
     }
 }
 
