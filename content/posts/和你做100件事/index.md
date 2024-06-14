@@ -5,8 +5,8 @@ draft: false
 summary: "This is my first post on my site"
 tags: ["space"]
 ---
-<!-- Begin Bucket List Container -->
-<div class="bucket-list-container">
+<!-- Begin Bucket List Container using Tailwind CSS -->
+<div class="bucket-list-container mx-auto my-4 flex flex-col items-start">
 {{< bucketlist number="001" content="在海中裸泳" link="https://example.com" >}}
 {{< bucketlist number="002" content="睇極光" link="https://example.com" >}}
 {{< bucketlist number="003" content="幫你做腳底按摩" link="https://example.com" >}}

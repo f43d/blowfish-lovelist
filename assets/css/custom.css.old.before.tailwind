@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: 'lst';
+    src: url('/fonts/lst.woff2') format('woff2'),
+         url('/fonts/lst.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bucket-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 45px; /* Default font size */
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+/* Reset specific or inherited styles */
+.bucket-list-container * {
+    margin: 0;
+    padding: 0;
+}
+
+.bucket-list-item .checkbox-icon {
+    width: 45px; /* Default width for checkbox icon */
+    height: auto;
+    margin-right: 50px;
+}
+
+.bucket-list-item.checked span {
+    text-decoration: line-through;
+    opacity: 0.5;  // Optional, for a faded effect
+}
+
+
+.bucket-list-item a {
+    color: #0056b3; /* Customize as needed */
+    text-decoration: none; /* Removing underline */
+}
+
+.bucket-list-item span {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;  // Padding inside the span, around the text
+}
+
+.bucket-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    font-family: 'lst', Arial, sans-serif; // Primary font setup here
+    text-align: center; // Ensuring text within the container is centered
+}
+
+.checkbox-icon {
+    width: 45px;  // Same size as above
+    height: auto;
+    margin-left: 20px;  // Increased space from the left
+    margin-right: 5px;  // Space between the icon and the text
+}
+
+
+.custom-footer-pretext {
+    text-align: center;
+    color: #666;  /* Default color, change as needed */
+    font-size: 12px; /* Default font size, change as needed */
+    margin: 12px 0; /* Adds spacing around the text */
+}
+
+/* Responsive Text Sizing */
+@media (max-width: 768px) {
+    .bucket-list-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 0;
+        font-size: 35px; /* Smaller font size for mobile */
+        margin-bottom: 2px; //less vertical space between items
+    }
+    .checkbox-icon {
+        width: 30px;
+		hight: auto;
+        margin-left: 10px;  // Less space on smaller screens
+        margin-right: 3px;  // Tighter space between icon and text
+    }
+
+    .bucket-list-item .checkbox-icon {
+        width: 20px; /* Smaller checkbox icon for mobile */
+    }
+    .bucket-list-item span {
+        font-size: 14px;  // Smaller text on smaller screens
+    }
+}

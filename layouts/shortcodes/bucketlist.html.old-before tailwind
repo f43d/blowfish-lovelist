@@ -1,3 +1,17 @@
+<div class="bucket-list-item {{ if eq (.Get "checked") "true" }}checked{{ end }}">
+    {{ if eq (.Get "checked") "true" }}
+    <!-- SVG for checked checkbox -->
+    <img src="/images/checked-box.svg" alt="Checked" class="checkbox-icon">
+    {{ else }}
+    <!-- SVG for unchecked checkbox -->
+    <img src="/images/unchecked-box.svg" alt="Unchecked" class="checkbox-icon">
+    {{ end }}
+    <span>
+        {{ .Get "number" }}.   <a href="{{ .Get "link" }}">{{ .Get "content" }}</a>
+    </span>
+</div>
+
+
 <div class="bucket-list-item flex items-center mb-2 {{ if eq (.Get "checked") "true" }}checked{{ end }}">
     {{ if eq (.Get "checked") "true" }}
     <!-- SVG for checked checkbox -->
