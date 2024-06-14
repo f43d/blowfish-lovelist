@@ -7,18 +7,25 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'LSTFont';
+    src: url('/fonts/lst.woff2') format('woff2'),
+         url('/fonts/lst.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .checkbox-icon {
-    width: 24px;
+    width: 24px;  /* Ensuring consistent size */
     height: auto;
-    margin-right: 5px;
-    /* Tailwind classes handle widths and margins, but can add global styles if needed */
-    /* Example: border-radius */
+    margin-right: 5px;  /* Space between icon and text */
 }
 
 .bucket-list-container {
-    width: 100%;
-    text-align: left;  /* Ensures text is aligned left */
+    width: 100%;  /* Full width for container */
+    text-align: left;  /* Ensuring left alignment */
+    max-width: 800px;  /* Optional max width to avoid excessive stretch */
+    padding: 0 1rem;  /* Add padding for better readability */
 }
 
 /* Style to handle cross-out effect for checked items */
@@ -27,7 +34,7 @@
     opacity: 0.5;  /* Optional faded effect */
 }
 
-/* General reset for bucket list items */
+/* Font family for specific elements */
 .bucket-list-item span,
 .bucket-list-item a {
     font-family: 'lst', Arial, sans-serif;

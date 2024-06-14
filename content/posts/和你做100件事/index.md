@@ -7,9 +7,8 @@ tags: ["space"]
 ---
 
 <!-- Begin Bucket List Container using Tailwind CSS -->
-<div class="bucket-list-container mx-auto my-4 flex flex-col items-start">
-    {{< bucketlist number="1" content="Visit Paris" link="https://example.com" checked="true" >}}
-    {{< bucketlist number="2" content="Learn to dance salsa" link="/salsa" >}}
+<div class="bucket-list-container w-full mx-auto my-4 px-4 flex flex-col items-center">
+{{< bucketlist number="2" content="Learn to dance salsa" link="/salsa" >}}
 {{< bucketlist number="001" content="在海中裸泳" link="https://example.com" >}}
 {{< bucketlist number="002" content="睇極光" link="https://example.com" >}}
 {{< bucketlist number="003" content="幫你做腳底按摩" link="https://example.com" >}}
