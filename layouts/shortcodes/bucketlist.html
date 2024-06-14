@@ -6,7 +6,7 @@
     <!-- SVG for unchecked checkbox -->
     <img src="/images/unchecked-box.svg" alt="Unchecked" class="checkbox-icon w-6 h-auto mr-2">
     {{ end }}
-    <span class="text-lg">
+    <span class="text-base sm:text-lg md:text-xl lg:text-2xl {{ if eq (.Get "checked") "true" }}line-through opacity-50{{ end }}">
         {{ .Get "number" }}. <a href="{{ .Get "link" }}" class="text-blue-500 hover:underline">{{ .Get "content" }}</a>
     </span>
 </div>

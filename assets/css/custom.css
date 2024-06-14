@@ -9,6 +9,9 @@
 
 
 .checkbox-icon {
+    width: 24px;
+    height: auto;
+    margin-right: 5px;
     /* Tailwind classes handle widths and margins, but can add global styles if needed */
     /* Example: border-radius */
 }
