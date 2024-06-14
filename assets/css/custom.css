@@ -20,15 +20,16 @@
 .bucket-list-item {
     display: flex;
     align-items: center;
-    font-size: 45px; /* Default font size */
+    font-size: 55px; /* Default font size */
     margin-bottom: 10px;
     padding: 0;
 }
 
 .bucket-list-item .checkbox-icon {
-    width: 45px; /* Default width for checkbox icon */
+    width: 55px; /* Default width for checkbox icon */
     height: auto;
-    margin-right: 5px;
+    margin-left: 120px; /* Default left margin */
+    margin-right: 20px; /* Default right margin */
 }
 
 .bucket-list-item.checked span {
@@ -66,6 +67,8 @@
 
     .bucket-list-item .checkbox-icon {
         width: 30px; /* Smaller icon for tablets */
+        margin-left: 80px; /* Adjust left margin for tablets */
+        margin-right: 15px; /* Adjust right margin for tablets */
     }
 }
 
@@ -76,5 +79,7 @@
 
     .bucket-list-item .checkbox-icon {
         width: 20px; /* Even smaller icon for mobile */
+        margin-left: 60px; /* Adjust left margin for mobile */
+        margin-right: 10px; /* Adjust right margin for mobile */
     }
 }
