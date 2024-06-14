@@ -14,17 +14,17 @@
 }
 
 .bucket-list-container {
-    width: 100%;
+    width: 100%;  /* Full width for container */
     text-align: left;  /* Ensures text aligns to the left */
-    max-width: 768px;  /* Adjust max-width to desired size */
-    padding: 0 16px;  /* Add padding for better readability */
+    max-width: 48rem;  /* Max width for readability, approximately 768px */
+    padding: 1rem;  /* Add padding for better readability */
     margin: auto;  /* Centers the container */
 }
 
 /* Style for checked items */
 .bucket-list-item.checked span {
     text-decoration: line-through;
-    opacity: 0.5;  /* Optional for faded effect */
+    opacity: 0.5;  /* Optional faded effect */
 }
 
 /* Font family for specific elements */
