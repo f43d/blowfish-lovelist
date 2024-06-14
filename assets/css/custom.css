@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'lst';
     src: url('/fonts/lst.woff2') format('woff2'),
@@ -7,35 +6,75 @@
     font-style: normal;
 }
 
-.checkbox-icon {
-    width: 32px;  /* Larger to enhance readability on mobile */
-    height: auto;
-    margin-right: 8px;  /* Increase margin if required */
-}
-
 .bucket-list-container {
-    width: 100%;  /* Full width for container */
-    text-align: left;  /* Ensures text aligns to the left */
-    max-width: 48rem;  /* Max width for readability, approximately 768px */
-    padding: 1rem;  /* Add padding for better readability */
-    margin: auto;  /* Centers the container */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    font-family: 'lst', Arial, sans-serif; /* Primary font setup here */
+    text-align: left; /* Ensuring text within the container is left-aligned */
 }
 
-/* Style for checked items */
+.bucket-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 45px; /* Default font size */
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.bucket-list-item .checkbox-icon {
+    width: 45px; /* Default width for checkbox icon */
+    height: auto;
+    margin-right: 5px;
+}
+
 .bucket-list-item.checked span {
     text-decoration: line-through;
-    opacity: 0.5;  /* Optional faded effect */
+    opacity: 0.5; /* Optional, for a faded effect */
 }
 
-/* Font family for specific elements */
-.bucket-list-item span,
 .bucket-list-item a {
-    font-family: 'lst', Arial, sans-serif;
+    color: #0056b3; /* Customize as needed */
+    text-decoration: none; /* Removing underline */
+}
+
+.bucket-list-item span {
+    padding-left: 5px; /* Padding inside the span, around the text */
+}
+
+/* Reset specific or inherited styles */
+.bucket-list-container * {
+    margin: 0;
+    padding: 0;
 }
 
 .custom-footer-pretext {
     text-align: center;
-    color: #666;  /* Default color, change as needed */
+    color: #666; /* Default color, change as needed */
     font-size: 12px; /* Default font size, change as needed */
     margin: 12px 0; /* Adds spacing around the text */
+}
+
+/* Responsive Text Sizing */
+@media (max-width: 1024px) {
+    .bucket-list-item {
+        font-size: 35px; /* Adjusted for tablet */
+    }
+
+    .bucket-list-item .checkbox-icon {
+        width: 30px; /* Smaller icon for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .bucket-list-item {
+        font-size: 25px; /* Smaller font size for mobile */
+    }
+
+    .bucket-list-item .checkbox-icon {
+        width: 20px; /* Even smaller icon for mobile */
+    }
 }

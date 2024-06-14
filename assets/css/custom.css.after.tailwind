@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'lst';
+    src: url('/fonts/lst.woff2') format('woff2'),
+         url('/fonts/lst.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.checkbox-icon {
+    width: 32px;  /* Larger to enhance readability on mobile */
+    height: auto;
+    margin-right: 8px;  /* Increase margin if required */
+}
+
+.bucket-list-container {
+    width: 100%;  /* Full width for container */
+    text-align: left;  /* Ensures text aligns to the left */
+    max-width: 48rem;  /* Max width for readability, approximately 768px */
+    padding: 1rem;  /* Add padding for better readability */
+    margin: auto;  /* Centers the container */
+}
+
+/* Style for checked items */
+.bucket-list-item.checked span {
+    text-decoration: line-through;
+    opacity: 0.5;  /* Optional faded effect */
+}
+
+/* Font family for specific elements */
+.bucket-list-item span,
+.bucket-list-item a {
+    font-family: 'lst', Arial, sans-serif;
+}
+
+.custom-footer-pretext {
+    text-align: center;
+    color: #666;  /* Default color, change as needed */
+    font-size: 12px; /* Default font size, change as needed */
+    margin: 12px 0; /* Adds spacing around the text */
+}
