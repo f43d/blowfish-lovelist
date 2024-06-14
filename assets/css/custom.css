@@ -7,31 +7,24 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'LSTFont';
-    src: url('/fonts/lst.woff2') format('woff2'),
-         url('/fonts/lst.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .checkbox-icon {
-    width: 24px;  /* Ensuring consistent size */
+    width: 32px;  /* Larger to enhance readability on mobile */
     height: auto;
-    margin-right: 5px;  /* Space between icon and text */
+    margin-right: 8px;  /* Increase margin if required */
 }
 
 .bucket-list-container {
-    width: 100%;  /* Full width for container */
-    text-align: left;  /* Ensuring left alignment */
-    max-width: 800px;  /* Optional max width to avoid excessive stretch */
-    padding: 0 1rem;  /* Add padding for better readability */
+    width: 100%;
+    text-align: left;  /* Ensures text aligns to the left */
+    max-width: 768px;  /* Adjust max-width to desired size */
+    padding: 0 16px;  /* Add padding for better readability */
+    margin: auto;  /* Centers the container */
 }
 
-/* Style to handle cross-out effect for checked items */
+/* Style for checked items */
 .bucket-list-item.checked span {
     text-decoration: line-through;
-    opacity: 0.5;  /* Optional faded effect */
+    opacity: 0.5;  /* Optional for faded effect */
 }
 
 /* Font family for specific elements */
@@ -46,4 +39,3 @@
     font-size: 12px; /* Default font size, change as needed */
     margin: 12px 0; /* Adds spacing around the text */
 }
-
