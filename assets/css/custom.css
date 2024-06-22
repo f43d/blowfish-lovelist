@@ -20,15 +20,15 @@
 .bucket-list-item {
     display: flex;
     align-items: center;
-    font-size: 55px; /* Default font size */
+    font-size: 40px; /* Default font size */
     margin-bottom: 10px;
     padding: 0;
 }
 
 .bucket-list-item .checkbox-icon {
-    width: 55px; /* Default width for checkbox icon */
+    width: 40px; /* Default width for checkbox icon */
     height: auto;
-    margin-left: 120px; /* Default left margin */
+    margin-left: 800px; /* Default left margin */
     margin-right: 20px; /* Default right margin */
 }
 
@@ -62,24 +62,24 @@
 /* Responsive Text Sizing */
 @media (max-width: 1024px) {
     .bucket-list-item {
-        font-size: 35px; /* Adjusted for tablet */
+        font-size: 30px; /* Adjusted for tablet */
     }
 
     .bucket-list-item .checkbox-icon {
         width: 30px; /* Smaller icon for tablets */
-        margin-left: 80px; /* Adjust left margin for tablets */
+        margin-left: 40px; /* Adjust left margin for tablets */
         margin-right: 15px; /* Adjust right margin for tablets */
     }
 }
 
 @media (max-width: 768px) {
     .bucket-list-item {
-        font-size: 25px; /* Smaller font size for mobile */
+        font-size: 20px; /* Smaller font size for mobile */
     }
 
     .bucket-list-item .checkbox-icon {
         width: 20px; /* Even smaller icon for mobile */
-        margin-left: 60px; /* Adjust left margin for mobile */
+        margin-left: 30px; /* Adjust left margin for mobile */
         margin-right: 10px; /* Adjust right margin for mobile */
     }
 }
