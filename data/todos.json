@@ -1,7 +1,5 @@
 [
     { "id": 0, "text": "一起去海邊看日出", "completed": false },
-    { "id": 1, "text": "一起做一頓豐盛的晚餐", "completed": true },
-    { "id": 2, "text": "一起學習一首新歌", "completed": false },
-    // ... 其他 97 條待辦事項
+    { "id": 1, "text": "一起做一頓豐盛的晚餐", "completed": true }
   ]
   
