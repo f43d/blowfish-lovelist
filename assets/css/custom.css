@@ -1,85 +1,50 @@
-@font-face {
-    font-family: 'lst';
-    src: url('/fonts/lst.woff2') format('woff2'),
-         url('/fonts/lst.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.bucket-list-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: fit-content;
-    margin: auto;
-    font-family: 'lst', Arial, sans-serif; /* Primary font setup here */
-    text-align: left; /* Ensuring text within the container is left-aligned */
-}
-
-.bucket-list-item {
+body {
+    font-family: 'CustomFont', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .todo-list li {
     display: flex;
     align-items: center;
-    font-size: 40px; /* Default font size */
     margin-bottom: 10px;
-    padding: 0;
-}
-
-.bucket-list-item .checkbox-icon {
-    width: 40px; /* Default width for checkbox icon */
-    height: auto;
-    margin-left: 800px; /* Default left margin */
-    margin-right: 20px; /* Default right margin */
-}
-
-.bucket-list-item.checked span {
-    text-decoration: line-through;
-    opacity: 0.5; /* Optional, for a faded effect */
-}
-
-.bucket-list-item a {
-    color: #0056b3; /* Customize as needed */
-    text-decoration: none; /* Removing underline */
-}
-
-.bucket-list-item span {
-    padding-left: 5px; /* Padding inside the span, around the text */
-}
-
-/* Reset specific or inherited styles */
-.bucket-list-container * {
-    margin: 0;
-    padding: 0;
-}
-
-.custom-footer-pretext {
-    text-align: center;
-    color: #666; /* Default color, change as needed */
-    font-size: 12px; /* Default font size, change as needed */
-    margin: 12px 0; /* Adds spacing around the text */
-}
-
-/* Responsive Text Sizing */
-@media (max-width: 1024px) {
-    .bucket-list-item {
-        font-size: 30px; /* Adjusted for tablet */
-    }
-
-    .bucket-list-item .checkbox-icon {
-        width: 30px; /* Smaller icon for tablets */
-        margin-left: 40px; /* Adjust left margin for tablets */
-        margin-right: 15px; /* Adjust right margin for tablets */
-    }
-}
-
-@media (max-width: 768px) {
-    .bucket-list-item {
-        font-size: 20px; /* Smaller font size for mobile */
-    }
-
-    .bucket-list-item .checkbox-icon {
-        width: 20px; /* Even smaller icon for mobile */
-        margin-left: 30px; /* Adjust left margin for mobile */
-        margin-right: 10px; /* Adjust right margin for mobile */
-    }
-}
+  }
+  
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .todo-number {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .todo-text {
+    font-size: 1.1rem;
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  

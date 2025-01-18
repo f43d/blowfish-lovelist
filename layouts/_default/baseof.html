@@ -7,11 +7,51 @@
   data-auto-appearance="{{ .Site.Params.autoSwitchAppearance | default " true" }}">
 {{- partial "head.html" . -}}
 
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+<main>
+  <header>
+    <h1>{{ .Site.Params.headerText }} <span id="days-counter"></span> days</h1>
+  </header>
+
+  <ul class="todo-list">
+    {{ range $.Site.Data.todos }}
+      <li>
+        <img src="{{ if .completed }}{{ "images/checked.png" | relURL }}{{ else }}{{ "images/unchecked.png" | relURL }}{{ end }}" 
+             alt="Checkbox" 
+             class="checkbox" 
+             data-id="{{ .id }}">
+        <img src="{{ "images/numbers/" | relURL }}{{ printf "%02d" .id }}.png" 
+             alt="{{ .id }}" 
+             class="todo-number">
+        <span class="todo-text">{{ .text }}</span>
+      </li>
+    {{ end }}
+  </ul>
+
+  <footer>
+    <p>{{ .Site.Params.footerText }}</p>
+  </footer>
+</main>
+
+<script>
+  // Calculate days since wedding
+  const weddingDate = new Date("2020-01-01"); // Replace with your wedding date
+  const today = new Date();
+  const timeDiff = today - weddingDate;
+  const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+  document.getElementById("days-counter").textContent = daysDiff;
+
+  // Toggle checkbox state
+  document.querySelectorAll(".checkbox").forEach(checkbox => {
+    checkbox.addEventListener("click", () => {
+      const id = checkbox.getAttribute("data-id");
+      // Add logic to save state (e.g., Local Storage or AJAX)
+      checkbox.src = checkbox.src.includes("unchecked") 
+        ? "{{ "images/checked.png" | relURL }}" 
+        : "{{ "images/unchecked.png" | relURL }}";
+    });
+  });
+</script>
+
 
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">

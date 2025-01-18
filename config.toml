@@ -1,0 +1,18 @@
+baseURL = "https://buc.ketli.st/"
+languageCode = "zh-tw"
+title = "我們的待辦清單"
+theme = "blowfish"  # 替換為你正在使用的主題名稱
+
+[params]
+  # 自定義字體
+  customFont = "CustomFont"
+  # Header 文字
+  headerText = "從結婚那天起，我們已經一起走過了"
+  # Footer 文字
+  footerText = "© 2023 我們的待辦清單 | 創作日期：2023-10-01"
+
+[menu]
+  [[menu.main]]
+    name = "首頁"
+    url = "/"
+    weight = 1
